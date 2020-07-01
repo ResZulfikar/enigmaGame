@@ -13,6 +13,8 @@ public class Controller : MonoBehaviour
     public Text scoreText;
     private float startTime;
     private int sisaLoncat = 2;
+    public AudioSource jumpSfx;
+    public AudioSource deathSfx; 
 
     //animasi mati
     private float bunnyHurtTime = -1;
@@ -30,6 +32,11 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.LoadLevel("Title");
+        }
+
         if (bunnyHurtTime == -1)
         {
 
@@ -51,6 +58,7 @@ public class Controller : MonoBehaviour
                     myRigidBody.AddForce(transform.up * kecLoncat);
                 }
                 sisaLoncat--;
+                jumpSfx.Play();
             }
 
             //animator set velocity karakter terhadap sumbu y
@@ -84,10 +92,10 @@ public class Controller : MonoBehaviour
 
             bunnyHurtTime = Time.time + 1;
             myAnim1.SetBool("bunnyHurt", true);
-
             myRigidBody.velocity = Vector2.zero;
             myRigidBody.AddForce(transform.up * kecLoncat);
             myCollider.enabled = false;
+            deathSfx.Play();
 
         }
         //control game play max dua kali loncat

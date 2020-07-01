@@ -62,10 +62,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MenuController.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\DestroyOnHit.cs" />
     <Compile Include="Assets\Scripts\GerakObjekKiri.cs" />
     <Compile Include="Assets\Scripts\PrefabsSpawner.cs" />
+    <Compile Include="Assets\Scripts\Recycler.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/LENOVO/Documents/GitHub/enigmaGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

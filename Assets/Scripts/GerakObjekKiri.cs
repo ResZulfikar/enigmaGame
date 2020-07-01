@@ -17,8 +17,9 @@ public class GerakObjekKiri : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //mengubah posisi virus, ke kiri (modif sumbu y aja)
+        //mengubah posisi virus, ke kiri (modif sumbu x aja)
         //used Vector3 cuz transform has x,y,z values
+
         transform.position += Vector3.left * speed * Time.deltaTime;
     }
 }
