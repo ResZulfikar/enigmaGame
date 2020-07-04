@@ -40,4 +40,6 @@ public class PrefabsSpawner : MonoBehaviour
             nextSpawn = Time.time + spawnCurve.Evaluate(curvePos) + Random.Range(-gerakLoncat, gerakLoncat);
         }
     }
+
+
 }

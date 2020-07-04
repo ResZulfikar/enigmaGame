@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\DestroyOnHit.cs" />
     <Compile Include="Assets\Scripts\GerakObjekKiri.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
+    <Compile Include="Assets\Scripts\PeluruMovement.cs" />
     <Compile Include="Assets\Scripts\Player1.cs" />
     <Compile Include="Assets\Scripts\Player2.cs" />
     <Compile Include="Assets\Scripts\PrefabsSpawner.cs" />
