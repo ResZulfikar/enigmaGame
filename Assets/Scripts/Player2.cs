@@ -44,7 +44,6 @@ public class Player2 : MonoBehaviour
         var newXPos = transform.position.x + deltaX;
 
         transform.position = new Vector2(newXPos, newYPos);
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
